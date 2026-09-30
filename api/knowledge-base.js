@@ -23,8 +23,10 @@
    ============================================================================= */
 
 const LOGO_DESIGN_RANGE = process.env.LOGO_DESIGN_RANGE || "pricing varies by scope";
-const APPAREL_MOQ = process.env.APPAREL_MOQ || "not specified";
-const APPAREL_MINIMUM_SPEND = process.env.APPAREL_MINIMUM_SPEND || "not specified";
+const APPAREL_MOQ = process.env.APPAREL_MOQ || "12";
+const APPAREL_SCREENPRINT_MOQ = process.env.APPAREL_SCREENPRINT_MOQ || "24";
+const APPAREL_MINIMUM_SPEND = process.env.APPAREL_MINIMUM_SPEND || "300";
+const APPAREL_PAYMENT_TERMS = process.env.APPAREL_PAYMENT_TERMS || "Payment is due at art approval. No purchase orders or net terms.";
 const APPAREL_SCREEN_FEE = process.env.APPAREL_SCREEN_FEE || "not specified";
 const APPAREL_DIGITIZING_FEE = process.env.APPAREL_DIGITIZING_FEE || "not specified";
 const BRANDING_FLOOR = process.env.BRANDING_FLOOR || "pricing varies by scope";
@@ -104,7 +106,7 @@ Every engagement runs on the same six-phase methodology. Phases one through four
 Golden Boy runs on the They Ask You Answer principle: publish real pricing, real ranges, and real minimums, instead of making people request a quote to learn anything. Where a price genuinely depends on the situation, we say what it depends on so a buyer can place themselves before a call.
 Specific figures a buyer may ask about, filled in with real numbers by Huntor:
 - Logo design typical range: ${LOGO_DESIGN_RANGE}.
-- Custom apparel: real per-piece tiers by quantity and colors or stitch count are published on the pricing page and inside the Apparel Calculator. Minimum order quantity: ${APPAREL_MOQ}. Minimum spend: ${APPAREL_MINIMUM_SPEND}. Screen setup fee: ${APPAREL_SCREEN_FEE} per color per location. Embroidery digitizing: ${APPAREL_DIGITIZING_FEE} per new logo.
+- Custom apparel: real per-piece tiers by quantity and colors or stitch count are published on the pricing page and inside the Apparel Calculator. Embroidery minimum order quantity: ${APPAREL_MOQ} pieces. Screen printing minimum order quantity: ${APPAREL_SCREENPRINT_MOQ} pieces. Promotional products minimum: depends on the product. Minimum spend: $${APPAREL_MINIMUM_SPEND} on every order. Screen setup fee: ${APPAREL_SCREEN_FEE} per color per location. Embroidery digitizing: ${APPAREL_DIGITIZING_FEE} per new logo. ${APPAREL_PAYMENT_TERMS}
 - Branding: an engagement priced to scope, starting at ${BRANDING_FLOOR}.
 - Brand Operations: a three-year engagement priced at 60 percent of the client's annual physical-marketing spend.
 What moves an engagement number: the number of locations and vehicles, how many vendors currently touch the brand, the depth of research, the event calendar, and how much of the asset library and sales material we rebuild.
